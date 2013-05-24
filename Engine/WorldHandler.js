@@ -126,6 +126,7 @@ var WorldHandler = Class.extend({
 
   },
   DoFullBackup: function() {
+    return;
     chatHandler.AnnounceMods("Backing up server...", "blue");
 
     var deploySh = spawn('sh', [ 'serverbackup.sh' ], {
